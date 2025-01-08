@@ -9,7 +9,7 @@
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <x-nav-lunk href="/" :active="request()->is ('/')">Home</x-nav-lunk>
-              <x-nav-lunk href="/blog" :active="request()->is ('blog')">Blog</x-nav-lunk>
+              <x-nav-lunk href="/posts" :active="request()->is ('posts')">Blog</x-nav-lunk>
               <x-nav-lunk href="/contact" :active="request()->is ('contact')">Contact</x-nav-lunk>
               <x-nav-lunk href="/media" :active="request()->is ('media')">Sosial Media</x-nav-lunk>
             </div>
@@ -86,7 +86,7 @@
       <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <x-nav-lunk href="/" :active="request()->is ('/')" >Home</x-nav-lunk>
-              <x-nav-lunk href="/blog" :active="request()->is ('blog')" >Blog</x-nav-lunk>
+              <x-nav-lunk href="/posts" :active="request()->is ('posts')" >Blog</x-nav-lunk>
               <x-nav-lunk href="/contact" :active="request()->is ('contact')" >Contact</x-nav-lunk>
               <x-nav-lunk href="/media" :active="request()->is ('media')" >Sosial Media</x-nav-lunk>
       </div>
