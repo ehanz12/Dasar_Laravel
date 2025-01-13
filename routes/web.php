@@ -19,14 +19,19 @@ Route::get('/posts/{post:id}', function (post $post) {
 });
 
 Route::get('/contact', function () {
-    return view('contact', ['title' => 'Contact']);
+    return view('contact', ['title' => 'Contact', 'main' => 'Ini adalah halaman contact']);
 });
 
 Route::get('/media', function () {
     return view('Media', ['title' => 'Media']);
 });
 
-Route::get('/author/{user}', function (User $user) {
+Route::get('/author/{user:username}', function (User $user) {
     
-    return view('posts', ['title' => 'articles by '. $user->name, 'posts' => $user->posts]); 
+    return view('posts', ['title' => count($user->posts) . ' articles by '. $user->name, 'posts' => $user->posts]); 
+});
+
+Route::get('/category/{category:slug}', function (Category $category) {
+    
+    return view('posts', ['title' =>  ' articles by '. $user->name, 'posts' => $user->posts]); 
 });
