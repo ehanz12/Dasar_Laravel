@@ -1,3 +1,3 @@
 composer dumpautoload // 
 untuk refresh ketika tidak bisa menjalankan factory
-php artisan optimixe:clear // juga sama
+php artisan optimize:clear // juga sama
