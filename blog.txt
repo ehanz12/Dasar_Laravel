@@ -1,3 +1,26 @@
-composer dumpautoload // 
-untuk refresh ketika tidak bisa menjalankan factory
-php artisan optimize:clear // juga sama
+composer dumpautoload //
+> untuk refresh ketika tidak bisa menjalankan factory
+
+php artisan optimize:clear //
+> juga sama
+
+php artisan make:component nama_component //
+> untuk membuat component blade di dalam resourse\views\component
+
+php artisan make:seeder nama_seeder //
+> membuat seeder database untuk percobaan 
+
+php artisan serve //
+> untuk menjalankan web
+
+php artisan tinker //
+> untuk percobaan pada factory
+
+php artisan migrate //
+> untuk migrasi dari laravel ke database
+
+php artisan migrate:fresh //
+untuk membuat seluruh migrasi di fresh atau diulang dari 0
+
+php artisan make:model nama_model //
+> membuat model laravel
