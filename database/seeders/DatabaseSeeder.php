@@ -7,8 +7,7 @@ use App\Models\User;
 use App\Models\Post;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -24,7 +23,6 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $username =
 
 
         // Category::create([
